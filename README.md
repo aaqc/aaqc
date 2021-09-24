@@ -1,6 +1,5 @@
 # aaqc
 
-
 ## How to add an ssh agent to your linux computer
 
  1. Create file `~/.config/systemd/user/ssh-agent.service` with content:
@@ -22,3 +21,17 @@
  2. Run `systemctl --user enable --now ssh-agent`
  3. Add `SSH_AUTH_SOCK DEFAULT="${XDG_RUNTIME_DIR}/ssh-agent.socket"` to the file `~/.pam_environment`
  4. Add `AddKeysToAgent yes` to the top of the file `~/.ssh/config`
+
+## How to use `puller.sh and cloner.sh`:
+
+### cloner.sh
+
+ 1. Go to the folder where you would like your repositories to reside
+ 2. Run this script with an absolute or relative path, for example `aaqc/cloner.sh`
+ 3. Wait for the script to clone all repos
+
+### puller.sh
+
+ 1. Go to the folder where your repositories are located
+ 2. Run this script with an absolute or relative path, for example `aaqc/puller.sh`
+ 3. Wait for the script to pull all repos
