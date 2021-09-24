@@ -22,7 +22,7 @@
  3. Add `SSH_AUTH_SOCK DEFAULT="${XDG_RUNTIME_DIR}/ssh-agent.socket"` to the file `~/.pam_environment`
  4. Add `AddKeysToAgent yes` to the top of the file `~/.ssh/config`
 
-## How to use `puller.sh and cloner.sh`:
+## How to use `puller.sh` and `cloner.sh`:
 
 ### cloner.sh
 
