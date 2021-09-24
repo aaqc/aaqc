@@ -3,7 +3,7 @@ REPOS="software dashboard firmware app backend"
 
 for REPO in $REPOS; do
 	cd $REPO
-	git fetch -A
+	git fetch --all
 	git pull
 	cd -
 done
